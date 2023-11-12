@@ -1,0 +1,8 @@
+<div class="container" (click)="toggleEnvelope()">
+  <div class="envelope" [class.open]="envelopeState === 'open'">
+    <div class="index-container" [@indexState]="indexState">
+      <span *ngIf="envelopeState === 'open'">індекс: 54010</span>
+    </div>
+  </div>
+  <div class="additional-text" *ngIf="envelopeState === 'open'">індекс: 54010</div>
+</div>

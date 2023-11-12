@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Встановлюємо висоту контейнера на пів вікна */
+}
+
+.envelope {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(158, 220, 233);
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.envelope.open {
+  background-color: transparent;
+  transform: scale(1.5);
+  border: 2px dashed #000;
+  border-radius: 50%;
+}
+
+.index-container {
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Додайте стилі для тексту "індекс: 54010" тут, якщо потрібно */
